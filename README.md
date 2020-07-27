@@ -20,6 +20,12 @@ The bundling process should improve once the PS compiler is modified to output E
 
 An [issue tracking the start of a CSS guide](https://github.com/purescript/documentation/issues/336).
 
+### What are some recommended frameworks for frontend web development?
+
+* [Halogen](https://github.com/purescript-halogen/purescript-halogen/) + (optional) [Hooks](https://github.com/thomashoneyman/purescript-halogen-hooks/)
+* [react-basic-hooks](https://github.com/spicydonuts/purescript-react-basic-hooks/)
+* Concur with [React](https://github.com/purescript-concur/purescript-concur-react) or Halogen (in-progress) backend
+
 ### What's on the roadmap?
 
 The [Indent to Implement](https://github.com/purescript/purescript/milestone/29) page provides some visibility into items on the todo list, but could be clarified with more details on planned sequence.
@@ -45,7 +51,7 @@ Ideally, we'd have a "roadmap summary" page, but until then, here's a short summ
 
 No. The docs referring to `bower` are outdated. [Spago](https://github.com/purescript/spago) is is the recommended package management tool.
 
-### Why can't I install a package listed on Pursuit
+### Why can't I install a package listed on Pursuit?
 
 [Pursuit](https://pursuit.purescript.org/) lists all published packages, but not all of these make it into the [package set](https://github.com/purescript/package-sets/) accessible to spago. It is encouraged to open PRs to [add these missing packages](https://github.com/purescript/package-sets/blob/master/CONTRIBUTING.md#how-to-add-a-package-to-the-set) to the package set.
 
