@@ -5,6 +5,10 @@ An unofficial FAQ for the PureScript language
 
 This is a work-in progress, so please suggest addition questions and/or answers.
 
+### How do I get started?
+
+See the [Getting Started Guide](https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md).
+
 ### How do I bundle my app?
 
 The simplest option is with `spago bundle-app`. This produces a single `.js` file that you can execute in `node` or include as a script (for example in your `index.html`). This runs dead-code-elimination, and that added delay is not ideal for quick iterations during development.
