@@ -3,7 +3,7 @@ An unofficial FAQ for the PureScript language
 
 ### What questions would you like to see in an FAQ?
 
-This is a work-in progress, so please suggest addition questions and/or answers.
+This is a work-in-progress, so please suggest addition questions and/or answers.
 
 ### How do I get started?
 
@@ -78,3 +78,7 @@ There's [a task](https://github.com/purescript/documentation/issues/334) for put
 ### How do I write ... ?
 
 The [cookbook](https://github.com/JordanMartinez/purescript-cookbook) aims to provide lots of miscellaneous examples. Feel free to request additional examples.
+
+### Why use `<<<`/`>>>` for function composition, and not `<<`/`>>` (like Elm)?
+
+We chose to match the syntax and capabilities of Haskell's [`Category` class](https://hackage.haskell.org/package/base-4.14.0.0/docs/Control-Category.html#t:Category) (we call it [`Semigroupoid`](https://pursuit.purescript.org/packages/purescript-prelude/docs/Control.Semigroupoid) and drop the identity requirement). Note that `<<<` in PureScript and Haskell allow for composing more than just functions, while `<<` in Elm and `.` in Haskell only work for functions.
