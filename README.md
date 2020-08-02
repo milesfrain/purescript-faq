@@ -27,8 +27,11 @@ An [issue tracking the start of a CSS guide](https://github.com/purescript/docum
 ### What are some recommended frameworks for frontend web development?
 
 * [Halogen](https://github.com/purescript-halogen/purescript-halogen/) + (optional) [Hooks](https://github.com/thomashoneyman/purescript-halogen-hooks/)
+  * [Halogen template](https://github.com/purescript-halogen/purescript-halogen-template/)
 * [react-basic-hooks](https://github.com/spicydonuts/purescript-react-basic-hooks/)
+  * [React template](https://github.com/purescript-templates/react-basic-hooks)
 * Concur with [React](https://github.com/purescript-concur/purescript-concur-react) or Halogen (in-progress) backend
+  * [Concur template](https://github.com/purescript-concur/purescript-concur-starter)
 
 ### What's on the roadmap?
 
