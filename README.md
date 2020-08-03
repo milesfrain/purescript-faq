@@ -33,6 +33,14 @@ An [issue tracking the start of a CSS guide](https://github.com/purescript/docum
 * Concur with [React](https://github.com/purescript-concur/purescript-concur-react) or Halogen (in-progress) backend
   * [Concur template](https://github.com/purescript-concur/purescript-concur-starter)
 
+### What are the differences among the above frameworks?
+
+* Halogen is written entirely in PureScript.
+* React-basic enables easy interop with the React ecosystem.
+* Concur focuses on simple composition of `Widgets`(components).
+
+You may have to dive into the framework docs and look at some examples to get a better sense of the differences.
+
 ### What's on the roadmap?
 
 The [Indent to Implement](https://github.com/purescript/purescript/milestone/29) page provides some visibility into items on the todo list, but could be clarified with more details on planned sequence.
