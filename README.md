@@ -28,8 +28,8 @@ An [issue tracking the start of a CSS guide](https://github.com/purescript/docum
 
 * [Halogen](https://github.com/purescript-halogen/purescript-halogen/) + (optional) [Hooks](https://github.com/thomashoneyman/purescript-halogen-hooks/)
   * [Halogen template](https://github.com/purescript-halogen/purescript-halogen-template/)
-* [react-basic-hooks](https://github.com/spicydonuts/purescript-react-basic-hooks/)
-  * [React template](https://github.com/purescript-templates/react-basic-hooks)
+* [react-basic](https://github.com/lumihq/purescript-react-basic/)
+  * [React basic hooks template](https://github.com/purescript-templates/react-basic-hooks)
 * Concur with [React](https://github.com/purescript-concur/purescript-concur-react) or Halogen (in-progress) backend
   * [Concur template](https://github.com/purescript-concur/purescript-concur-starter)
 
