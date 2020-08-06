@@ -64,7 +64,7 @@ Ideally, we'd have a "roadmap summary" page, but until then, here's a short summ
 
 ### Do I need bower to install packages?
 
-No. The docs referring to `bower` are outdated. [Spago](https://github.com/purescript/spago) is is the recommended package management tool.
+No. The docs referring to `bower` are outdated. [Spago](https://github.com/purescript/spago) is the recommended package management tool.
 
 ### Why can't I install a package listed on Pursuit?
 
