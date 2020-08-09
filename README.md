@@ -82,6 +82,13 @@ Some framework templates also demonstrate how to setup a project with automatic 
 * [Halogen](https://github.com/purescript-halogen/purescript-halogen-template)
 * [React](https://github.com/purescript-templates/react-basic-hooks)
 
+### Is there a style guide for PureScript indentation or an autoformatting tool?
+
+Yes. The [`purty` formatter](https://gitlab.com/joneshf/purty/). Note that there are still some [formatting issues](https://gitlab.com/joneshf/purty/-/issues) to fix.
+
+For editor integrations:
+* VSCode - [vscode-purty](https://github.com/mvakula/vscode-purty) extension
+
 ### How does PureScript compare to language X?
 
 There's [a task](https://github.com/purescript/documentation/issues/334) for putting together these summaries. Feel free to contribute.
