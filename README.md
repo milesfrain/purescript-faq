@@ -99,6 +99,6 @@ The [cookbook](https://github.com/JordanMartinez/purescript-cookbook) aims to pr
 
 ### Why use `<<<`/`>>>` for function composition, and not `<<`/`>>` (like Elm)?
 
-We chose to match the syntax and capabilities of Haskell's [`Category` class](https://hackage.haskell.org/package/base-4.14.0.0/docs/Control-Category.html#t:Category) (we call it [`Semigroupoid`](https://pursuit.purescript.org/packages/purescript-prelude/docs/Control.Semigroupoid) and drop the identity requirement). Note that `<<<` in PureScript and Haskell allow for composing more than just functions, while `<<` in Elm and `.` in Haskell only work for functions.
+We chose to match the syntax and capabilities of Haskell's [`Category` class](https://hackage.haskell.org/package/base-4.14.0.0/docs/Control-Category.html#t:Category) (we call it [`Semigroupoid`](https://pursuit.purescript.org/packages/purescript-prelude/docs/Control.Semigroupoid) and drop the identity requirement). Note that `<<<` in PureScript and Haskell allow for composing more than just functions, while `<<` in Elm and `.` in Haskell only work for functions. See [Differences from Haskell](https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md#composition-operator).
 
 Additionally, while not essential, it is common to use `Semigroupoid` composition with operators in the `Functor` hierarchy (eg., `>>=`, `>=>`, `<$>`, `<*>`), and using a three-character operator keeps code in alignment when split over multiple lines.
