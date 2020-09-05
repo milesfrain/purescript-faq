@@ -88,6 +88,7 @@ Yes. The [`purty` formatter](https://gitlab.com/joneshf/purty/). Note that there
 
 For editor integrations:
 * VSCode - [vscode-purty](https://github.com/mvakula/vscode-purty) extension
+* Vim/Neovim with coc.nvim - [coc-purty](https://github.com/leighman/coc-purty)
 
 ### How does PureScript compare to language X?
 
