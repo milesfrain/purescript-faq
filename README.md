@@ -22,23 +22,6 @@ Some faster bundling option are:
 
 The bundling process should improve once the PS compiler is modified to output ES modules.
 
-### Why is there no built-in support for tuples?
-
-Built-in tuples, if added, are one more feature to maintain in the PureScript compiler. It is one that is also easily expressed without built-in support. For example, using [`purescript-tuples`](https://pursuit.purescript.org/packages/purescript-tuples), you can write the following code:
-
-```purs
-module Foo where
-
-import Data.Tuple (Tuple(..), (/\), type (/\))
-
-tuple :: Tuple Int String
-tuple = Tuple 1 "bar"
-
--- You can also use `/\` to write tuples
-conciseTuple :: Int /\ String
-conciseTuple = 1 /\ "bar"
-```
-
 ### What are my CSS options?
 
 An [issue tracking the start of a CSS guide](https://github.com/purescript/documentation/issues/336).
@@ -118,6 +101,23 @@ There's [a task](https://github.com/purescript/documentation/issues/334) for put
 ### How do I write ... ?
 
 The [cookbook](https://github.com/JordanMartinez/purescript-cookbook) aims to provide lots of miscellaneous examples. Feel free to request additional examples.
+
+### Why is there no built-in support for tuples (like Haskell and Elm)?
+
+Built-in tuples, if added, are one more feature to maintain in the PureScript compiler. It is one that is also easily expressed without built-in support. For example, using [`purescript-tuples`](https://pursuit.purescript.org/packages/purescript-tuples), you can write the following code:
+
+```purs
+module Foo where
+
+import Data.Tuple (Tuple(..), (/\), type (/\))
+
+tuple :: Tuple Int String
+tuple = Tuple 1 "bar"
+
+-- You can also use `/\` to write tuples
+conciseTuple :: Int /\ String
+conciseTuple = 1 /\ "bar"
+```
 
 ### Why use `<<<`/`>>>` for function composition, and not `<<`/`>>` (like Elm)?
 
