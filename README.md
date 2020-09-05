@@ -62,7 +62,7 @@ You may have to dive into the framework docs and look at some examples to get a 
 
 ### What's on the roadmap?
 
-The [Intended to Implement](https://github.com/purescript/purescript/milestone/29) page provides some visibility into items on the todo list, but could be clarified with more details on planned sequence.
+The [Intended to be Implemented](https://github.com/purescript/purescript/milestone/29) page provides some visibility into items on the todo list, but could be clarified with more details on planned sequence.
 Ideally, we'd have a "roadmap summary" page, but until then, here's a short summary:
 
 - 0.13.8 - Current release
