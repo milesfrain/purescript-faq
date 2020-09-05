@@ -22,6 +22,23 @@ Some faster bundling option are:
 
 The bundling process should improve once the PS compiler is modified to output ES modules.
 
+### Why is there no built-in support for tuples?
+
+Built-in tuples, if added, are one more feature to maintain in the PureScript compiler. It is one that is also easily expressed without built-in support. For example, using [`purescript-tuples`](https://pursuit.purescript.org/packages/purescript-tuples), you can write the following code:
+
+```purs
+module Foo where
+
+import Data.Tuple (Tuple(..), (/\), type (/\))
+
+tuple :: Tuple Int String
+tuple = Tuple 1 "bar"
+
+-- You can also use `/\` to write tuples
+conciseTuple :: Int /\ String
+conciseTuple = 1 /\ "bar"
+```
+
 ### What are my CSS options?
 
 An [issue tracking the start of a CSS guide](https://github.com/purescript/documentation/issues/336).
@@ -92,6 +109,7 @@ Yes. The [`purty` formatter](https://gitlab.com/joneshf/purty/). Note that there
 For editor integrations:
 
 - VSCode - [vscode-purty](https://github.com/mvakula/vscode-purty) extension
+- Vim/Neovim with coc.nvim - [coc-purty](https://github.com/leighman/coc-purty)
 
 ### How does PureScript compare to language X?
 
