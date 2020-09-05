@@ -1,5 +1,6 @@
 # purescript-faq
-An unofficial FAQ for the PureScript language
+
+An unofficial FAQ for the PureScript language.
 
 ### What questions would you like to see in an FAQ?
 
@@ -11,12 +12,13 @@ See the [Getting Started Guide](https://github.com/purescript/documentation/blob
 
 ### How do I bundle my app?
 
-The simplest option is with `spago bundle-app`. This produces a single `.js` file that you can execute in `node` or include as a script (for example in your `index.html`). This runs dead-code-elimination, and that added delay is not ideal for quick iterations during development.
+The simplest option is with `spago bundle-app`. This produces a single `.js` file that you can execute in `node` or include as a script (for example in your `index.html`). This runs dead code elimination, and that added delay is not ideal for quick iterations during development.
 
 Some faster bundling option are:
-* Parcel - [example](https://github.com/purescript-halogen/purescript-halogen-template)
-* Webpack - [example](https://github.com/milesfrain/tps-save-gist/tree/ace-mode-fixed) (this is more complex than the other examples)
-* esbuild - [example](https://github.com/Mateiadrielrafael/purescript-halogen-template)
+
+- Parcel - [example](https://github.com/purescript-halogen/purescript-halogen-template)
+- Webpack - [example](https://github.com/milesfrain/tps-save-gist/tree/ace-mode-fixed) (this is more complex than the other examples)
+- esbuild - [example](https://github.com/Mateiadrielrafael/purescript-halogen-template)
 
 The bundling process should improve once the PS compiler is modified to output ES modules.
 
@@ -26,41 +28,41 @@ An [issue tracking the start of a CSS guide](https://github.com/purescript/docum
 
 ### What are some recommended frameworks for frontend web development?
 
-* [Halogen](https://github.com/purescript-halogen/purescript-halogen/) + (optional) [Hooks](https://github.com/thomashoneyman/purescript-halogen-hooks/)
-  * [Halogen template](https://github.com/purescript-halogen/purescript-halogen-template/)
-* [react-basic](https://github.com/lumihq/purescript-react-basic/)
-  * [React basic hooks template](https://github.com/purescript-templates/react-basic-hooks)
-* Concur with [React](https://github.com/purescript-concur/purescript-concur-react) or Halogen (in-progress) backend
-  * [Concur template](https://github.com/purescript-concur/purescript-concur-starter)
+- [Halogen](https://github.com/purescript-halogen/purescript-halogen/) + (optional) [Hooks](https://github.com/thomashoneyman/purescript-halogen-hooks/)
+  - [Halogen template](https://github.com/purescript-halogen/purescript-halogen-template/)
+- [react-basic](https://github.com/lumihq/purescript-react-basic/)
+  - [React basic hooks template](https://github.com/purescript-templates/react-basic-hooks)
+- Concur with [React](https://github.com/purescript-concur/purescript-concur-react) or Halogen (in-progress) backend
+  - [Concur template](https://github.com/purescript-concur/purescript-concur-starter)
 
 ### What are the differences among the above frameworks?
 
-* Halogen is written entirely in PureScript.
-* React-basic enables easy interop with the React ecosystem.
-* Concur focuses on simple composition of `Widgets`(components).
+- Halogen is written entirely in PureScript.
+- React-basic enables easy interop with the React ecosystem.
+- Concur focuses on simple composition of `Widgets` (components).
 
 You may have to dive into the framework docs and look at some examples to get a better sense of the differences.
 
 ### What's on the roadmap?
 
-The [Indent to Implement](https://github.com/purescript/purescript/milestone/29) page provides some visibility into items on the todo list, but could be clarified with more details on planned sequence.
+The [Intend to Implement](https://github.com/purescript/purescript/milestone/29) page provides some visibility into items on the todo list, but could be clarified with more details on planned sequence.
 Ideally, we'd have a "roadmap summary" page, but until then, here's a short summary:
 
-* 0.13.8 - Current release
-* 0.14.0 - Polykinds
-  * Currently blocked by coercible bugs
-    * https://github.com/purescript/purescript/issues/3875
-    * https://github.com/purescript/purescript/issues/3889
-* 0.15.0 - ES Modules
-  * https://github.com/purescript/purescript/issues/3613
+- 0.13.8 - Current release
+- 0.14.0 - Polykinds
+  - Currently blocked by coercible bugs
+    - https://github.com/purescript/purescript/issues/3875
+    - https://github.com/purescript/purescript/issues/3889
+- 0.15.0 - ES Modules
+  - https://github.com/purescript/purescript/issues/3613
 
 ### What's missing from having PureScript 1.0?
 
-* [New package registry](https://github.com/purescript/registry)
-* ES6 modules
-* Better dead code elimination and bundling
-* Complete documentation
-* Smooth new-user experience
+- [New package registry](https://github.com/purescript/registry)
+- ES6 modules
+- Better dead code elimination and bundling
+- Complete documentation
+- Smooth new-user experience
 
 ### Do I need bower to install packages?
 
@@ -79,15 +81,17 @@ Pursuit plans to be better synced with the new registry.
 A list of available [editor options](https://github.com/purescript/documentation/blob/master/ecosystem/Editor-and-tool-support.md).
 
 Some framework templates also demonstrate how to setup a project with automatic rebuild and webpage refresh upon saving changes:
-* [Halogen](https://github.com/purescript-halogen/purescript-halogen-template)
-* [React](https://github.com/purescript-templates/react-basic-hooks)
+
+- [Halogen](https://github.com/purescript-halogen/purescript-halogen-template)
+- [React](https://github.com/purescript-templates/react-basic-hooks)
 
 ### Is there a style guide for PureScript indentation or an autoformatting tool?
 
 Yes. The [`purty` formatter](https://gitlab.com/joneshf/purty/). Note that there are still some [formatting issues](https://gitlab.com/joneshf/purty/-/issues) to fix.
 
 For editor integrations:
-* VSCode - [vscode-purty](https://github.com/mvakula/vscode-purty) extension
+
+- VSCode - [vscode-purty](https://github.com/mvakula/vscode-purty) extension
 
 ### How does PureScript compare to language X?
 
@@ -106,7 +110,7 @@ Additionally, while not essential, it is common to use `Semigroupoid` compositio
 ### If I define an `Ord` instance, why must I also define an `Eq` instance?
 
 Original question:
+
 > For dependent typeclasses (e.g. `Eq` and `Ord`) the operations from one are (always? sometimes?) strictly more powerful than the operations in the other (i.e. you can express `eq` via `compare`). Why is it then that if I define `Ord` for a type, I still need to explicitly define `Eq`? Shouldn't `Eq` be automatically derivable by having an instance of `Ord`?
 
-A seemingly-redundant definition of `Eq` is required to avoid creating [orphan instances](https://github.com/purescript/documentation/blob/master/language/Type-Classes.md#orphan-instances).  Imagine if `Ord` and `Eq` were in separate libraries, and the author of the `Ord` library defined an `Ord` instance for some type which didn’t have an `Eq` instance. If instances worked that way, that type would automatically get an `Eq` instance too. Now suppose the author of the `Eq` library adds a direct `Eq` instance for that type which doesn’t agree with the one via `Ord`. What should we do now?
-
+A seemingly-redundant definition of `Eq` is required to avoid creating [orphan instances](https://github.com/purescript/documentation/blob/master/language/Type-Classes.md#orphan-instances). Imagine if `Ord` and `Eq` were in separate libraries, and the author of the `Ord` library defined an `Ord` instance for some type which didn’t have an `Eq` instance. If instances worked that way, that type would automatically get an `Eq` instance too. Now suppose the author of the `Eq` library adds a direct `Eq` instance for that type which doesn’t agree with the one via `Ord`. What should we do now?
