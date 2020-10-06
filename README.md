@@ -119,7 +119,10 @@ conciseTuple :: Int /\ String
 conciseTuple = 1 /\ "bar"
 ```
 
-Relevant links: https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md#tuples, https://github.com/purescript/purescript/issues/1687
+Relevant links:
+
+- https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md#tuples
+- https://github.com/purescript/purescript/issues/1687
 
 ### Why use `<<<`/`>>>` for function composition, and not `<<`/`>>` (like Elm)?
 
