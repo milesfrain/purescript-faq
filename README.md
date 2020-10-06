@@ -104,7 +104,7 @@ The [cookbook](https://github.com/JordanMartinez/purescript-cookbook) aims to pr
 
 ### Why is there no built-in support for tuples (like Haskell and Elm)?
 
-Built-in tuples, if added, are one more feature to maintain in the PureScript compiler. It is one that is also easily expressed without built-in support. For example, using [`purescript-tuples`](https://pursuit.purescript.org/packages/purescript-tuples), you can write the following code:
+Records serve the same niche and are more readable. Also, built-in tuples, if added, are one more feature to maintain in the PureScript compiler and one that is easily expressed without built-in support. For example, using [`purescript-tuples`](https://pursuit.purescript.org/packages/purescript-tuples), you can write the following code:
 
 ```purs
 module Foo where
@@ -118,6 +118,11 @@ tuple = Tuple 1 "bar"
 conciseTuple :: Int /\ String
 conciseTuple = 1 /\ "bar"
 ```
+
+Relevant links:
+
+- https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md#tuples
+- https://github.com/purescript/purescript/issues/1687
 
 ### Why use `<<<`/`>>>` for function composition, and not `<<`/`>>` (like Elm)?
 
