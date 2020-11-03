@@ -137,3 +137,7 @@ Original question:
 > For dependent typeclasses (e.g. `Eq` and `Ord`) the operations from one are (always? sometimes?) strictly more powerful than the operations in the other (i.e. you can express `eq` via `compare`). Why is it then that if I define `Ord` for a type, I still need to explicitly define `Eq`? Shouldn't `Eq` be automatically derivable by having an instance of `Ord`?
 
 A seemingly-redundant definition of `Eq` is required to avoid creating [orphan instances](https://github.com/purescript/documentation/blob/master/language/Type-Classes.md#orphan-instances). Imagine if `Ord` and `Eq` were in separate libraries, and the author of the `Ord` library defined an `Ord` instance for some type which didn’t have an `Eq` instance. If instances worked that way, that type would automatically get an `Eq` instance too. Now suppose the author of the `Eq` library adds a direct `Eq` instance for that type which doesn’t agree with the one via `Ord`. What should we do now?
+
+### Why must I manually name my instances?
+
+Sometimes it's not straightforward to infer names, and custom names can make FFI more convenient. Additional discussion in [this issue](https://github.com/purescript/purescript/issues/752).
