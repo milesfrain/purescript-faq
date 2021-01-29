@@ -50,9 +50,7 @@ Ideally, we'd have a "roadmap summary" page, but until then, here's a short summ
 
 - 0.13.8 - Current release
 - 0.14.0 - Polykinds
-  - Currently blocked by coercible bugs
-    - https://github.com/purescript/purescript/issues/3875
-    - https://github.com/purescript/purescript/issues/3889
+  - To be released "soon"(TM)
 - 0.15.0 - ES Modules
   - https://github.com/purescript/purescript/issues/3613
 
