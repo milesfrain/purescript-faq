@@ -48,10 +48,7 @@ You may have to dive into the framework docs and look at some examples to get a 
 The [Intended to be Implemented](https://github.com/purescript/purescript/milestone/29) page provides some visibility into items on the todo list, but could be clarified with more details on planned sequence.
 Ideally, we'd have a "roadmap summary" page, but until then, here's a short summary:
 
-- 0.13.8 - Current release
-- 0.14.0 - Polykinds and safe zero-cost coercions
-  - To be released "soon"(TM)
-  - Changelog [preview](https://github.com/purescript/purescript/blob/0.14-release-notes/CHANGELOG.md)
+- 0.14.0 - Current release
 - 0.15.0 - ES Modules
   - https://github.com/purescript/purescript/issues/3613
 
