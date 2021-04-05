@@ -136,4 +136,4 @@ A seemingly-redundant definition of `Eq` is required to avoid creating [orphan i
 
 ### Why must I manually name my instances?
 
-Sometimes it's not straightforward to infer names, and custom names can make FFI more convenient. Additional discussion in [this issue](https://github.com/purescript/purescript/issues/752).
+Sometimes it's not straightforward to infer names. Additional discussion in [this issue](https://github.com/purescript/purescript/issues/752).
