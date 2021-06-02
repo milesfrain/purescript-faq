@@ -136,4 +136,4 @@ A seemingly-redundant definition of `Eq` is required to avoid creating [orphan i
 
 ### Why must I manually name my instances?
 
-[Automatic instance naming](https://github.com/purescript/purescript/pull/4085) will be available in the next compiler release (`0.15`).
+[Automatic instance naming](https://github.com/purescript/purescript/pull/4085) will be available in the next compiler release (`0.14.2`).
